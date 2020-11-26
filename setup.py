@@ -23,12 +23,10 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-REQUIRED_PACKAGES = ['six', 'absl-py', 'numpy']
+REQUIRED_PACKAGES = ['six', 'absl-py', 'numpy', 'dm-sonnet==1.36']
 EXTRA_PACKAGES = {
-    'tensorflow': ['tensorflow>=1.8.0'],
-    'tensorflow with gpu': ['tensorflow-gpu>=1.8.0'],
-    'sonnet': ['dm-sonnet>=1.26'],
-    'sonnet with gpu': ['dm-sonnet-gpu>=1.26'],
+    'tensorflow': ['tensorflow==1.15.0'],
+    'tensorflow-gpu': ['tensorflow-gpu==1.15.0'],
 }
 
 

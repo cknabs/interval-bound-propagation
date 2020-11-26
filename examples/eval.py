@@ -232,7 +232,7 @@ def main(unused_args):
       FLAGS.batch_size, ibp.UntargetedPGDAttack)
 
   # Prepare to load the pretrained-model.
-  saver = tf.compat.v1.train.Saver(original_predictor.get_variables())
+  saver = tf.train.Saver(original_predictor.get_variables())
 
   # Run everything.
   tf_config = tf.ConfigProto()
